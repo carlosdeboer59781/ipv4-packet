@@ -1,0 +1,17 @@
+{
+  "name": "ipv4-packet",
+  "version": "0.1.0",
+  "description": "Decode an IPv4 datagram buffer into its header fields and locate its payload.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": "./src/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {}
+}
