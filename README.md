@@ -56,3 +56,10 @@ there.
 Options are returned as a `Uint8Array` copy. If you need the raw option
 bytes in place, read them from the original buffer at `headerLength - 20`
 bytes starting at offset 20.
+
+## Performance
+
+The window keeps a bounded buffer, so `push` is constant time and memory does not
+grow with the length of the stream. `peak` and `trough` are linear in the window
+size, which is the trade that keeps `push` cheap.
+
